@@ -1,18 +1,14 @@
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
-function DetailPage(){
-    const router = useRouter();
+function DetailPage() {
+  const router = useRouter();
 
-    const newsId = router.query.newsId;
+  const newsId = router.query.newsId;
 
-    // Send a request to the backend API
-    // to fetch the news item with newsID
+  // Send a request to the backend API
+  // to fetch the news item with newsID
 
-    return (
-        <h1>
-            The {newsId} Dynamic Route
-        </h1>
-    )
+  return <h1>The {newsId} Dynamic Route</h1>;
 }
 
 export default DetailPage;
